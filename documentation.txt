@@ -1,0 +1,15 @@
+Main.c: This file is where most of the operations are executed.
+It takes in a file and reads the file. It then proceeds to
+tokenize each line and store it inside an array. It performs checks
+to make sure that the token's isn't null. It also skips comments
+and empty lines. Next the program uses a switch to assign the token
+to either the label, opcode and the operand. Depending on the numbers
+of tokens generated. Then the program updates the Location counter
+based on the directives. I also performed extra checks for the BYTE and Start.
+
+Insertsymbol.c: This contains two functions. One checks if the
+symbol exists and the other inserts the symbol to the table
+
+opcode.c: This contains three functions. ConvertToUppen converts
+characters to uppercass, CheckforFormat returns the instruction format.
+It also contained the directive for the SIC instructions.
